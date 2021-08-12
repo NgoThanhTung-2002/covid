@@ -1,0 +1,360 @@
+/* Reset CSS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+/*-------------------------------------------------*/
+/*----------header---------------------*/
+
+#header {
+    height: 46px;
+    width: 100%;
+    background-color: blue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#nav {
+    display: inline-block;
+    margin-right: 20px;
+    float: right;
+}
+
+#header img{
+    height: 46px;
+    padding-left: 3%;
+}
+
+#nav >li{
+    display: inline-block;
+}
+
+#nav li{
+    list-style-type: none;
+    position: relative;
+    
+    
+}
+
+#nav  li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 46px;
+    padding: 0px 25px;
+    display: block;
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+#nav >li:hover >a,
+#nav .subnav >li:hover > a{
+    background-color: #0055b3;
+}
+
+#nav .subnav{
+    display: none;
+    min-width: 116px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: blue;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+
+}
+
+#nav .nav-arrow-down{
+    font-size: 14px;
+}
+
+#nav .search {
+    color: #fff;
+    font-weight: 800;
+    font-size: 20px;
+    background-color: #32bbed;
+    padding: 9px 17px 17px 17px;
+
+}
+#nav >a{
+    text-decoration: none;
+}
+
+#nav .search:hover {
+    cursor: pointer;
+    background: darkblue ;
+}
+
+
+#slider{
+    position: relative;
+    margin-top: 46px;
+    padding-top: 22%;
+    background: url('/img/header1.jpg') top center / cover no-repeat;
+}
+
+.text-content{
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    text-align: center;
+    font-size: 200%;
+    font-weight: 700;
+    color: #1665d2;
+    text-transform: uppercase;
+
+}
+
+.text-content .slogan{
+    border: 1px solid rgb(6, 6, 139);
+    margin-bottom: 50px;
+}
+
+.text-content .slogan:hover p{
+    color: rgb(197, 16, 31);
+}
+/*------------------------------------------------------*/
+/*-----------------------Content------------------------*/
+
+
+
+/*-------------------thống kê số liệu---------------*/
+.section{
+    margin-top: 15px;
+}
+
+.section h2{
+
+ text-align: center;
+ margin: 20px;
+ padding: 10px 15px;
+ background-color: blue;
+ color: #fff;
+ display: inline-block;
+ border-radius: 7px;
+
+}
+
+.section-top-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    font-family: "Montserrat",sans-serif;   
+    width: 1100px
+}
+
+.section-top-wrapper .section-case {
+    flex: 0 0 24.7%;
+    box-shadow: 0 7px 14px rgb(50 50 93 / 10%), 0 3px 6px rgb(0 0 0 / 8%);
+    padding: 20px 45px;
+}
+
+.section-case:hover{
+    background-color: steelblue;
+    color: #fff;
+}
+
+.section-top-wrapper .section-case:first-child {
+    border-radius: 55px 0 0 55px;
+}
+
+
+.section-top-wrapper .section-case:last-child {
+    border-radius: 0 55px 55px 0;
+}
+
+.section-case-content {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.section-top-wrapper h3 {
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0;
+}
+
+.section-top-wrapper .case-number {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.section-top-wrapper .case-note {
+    margin-top: 3px;
+    font-size: 14px;
+}
+
+.section-top-wrapper .case-note i {
+    color: #ff040c;
+    margin-right: 7px;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+
+/*-----------------------------------giới thiệu covid-19--------*/
+.covid{
+    width: 70%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 7px 14px rgb(50 50 93 / 10%), 0 3px 6px rgb(0 0 0 / 8%);
+    padding: 20px 30px;
+}
+
+.covid .covid-wrapper{
+    padding: 15px;
+}
+
+.covid .heading{
+    text-align: center;
+    margin: 20px auto;
+}
+
+.covid img{
+    width: 60%;
+    margin-left: 17%;
+}
+
+/*---------------------------------------------------*/
+/*-------------------news-----------------------------*/
+
+.section-wrapper{
+    margin: 50px auto;
+}
+
+.col-left{
+    
+    float: left;
+    width: 60%;
+}
+
+.col-left h1{
+    text-transform: uppercase;
+    color: #1665d2;
+    padding: 20px;
+
+}
+
+.news-wrapper{
+    float: left;
+    width: 30%;
+    padding: 16px;
+    margin-bottom: 10px;
+}
+
+.news a{
+    text-decoration: none;
+    color: #000 ;
+}
+
+.news img{
+    width: 100%;
+    margin-bottom: 10px;
+    transition: 0.4s ease;
+    
+}
+
+.news-content {
+    line-height: 1.4;
+}
+
+.news h3{
+    color: blue;
+    margin-bottom: 8px;
+}
+
+.news-wrapper:hover img{
+
+    opacity: 0.6;
+    transform: scale(1.05);
+    width: 100%;
+}
+
+
+
+
+/*--------------------------------------------*/
+
+.col-right{
+    width: 40%;
+    float: right;
+    display: inline-block;
+}
+
+.col-right h1{
+    color: blue;
+    text-transform: uppercase;
+}
+
+
+
+.believe-wrapper{
+    border-bottom: #000;
+    padding: 20px;
+    
+}
+
+.believe-wrapper a{
+    text-decoration: none;
+    color: #000;
+
+}
+
+.believe-wrapper img{
+    float: left;
+    margin: 10px 20px 15px 0px;
+}
+
+.believe-wrapper:hover  h3,
+.believe-wrapper:hover img
+{
+    color: blue;
+    opacity: 0.6;
+    
+}
+/*--------------------------------------------------*/
+.content-section{
+    width: 100%;
+    padding: 64px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.content-section .section-heading{
+    letter-spacing: 4px;
+    font-size: 30px;
+    padding: 30px;
+}
+
+.box .member-list{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ .box .member-item{
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding: 20px;
+
+}
+.box img{
+    width: 100%;
+}
